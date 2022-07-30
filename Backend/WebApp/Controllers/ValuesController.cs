@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WebApp.ViewModels;
 
 namespace WebApp.Controllers
 {
@@ -7,14 +8,18 @@ namespace WebApp.Controllers
     [ApiController]
     public class Articles : ControllerBase
     {
-        public IEnumerable<ArticleView> GetArticles()
+        public Articles()
         {
 
+        }
+        public IEnumerable<ArticleView> GetArticles()
+        {
+            throw new NotImplementedException();
         }
 
         public bool DeleteArticle (int id)
         {
-
+            throw new NotImplementedException();
         }
     }
 }
